@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-  const barraNavegacion = document.getElementById('barraNavegacion');
+  const barraNavegacion = document.getElementById('item-lista');
 
   barraNavegacion.addEventListener('mouseover', function() {
     this.style.backgroundColor = 'hsl(75, 94%, 57%)';

@@ -9,41 +9,43 @@ html {
   font-size: 62.5%;
 }
 
-
-
-/* main {
-    background-color: rgba(31,26,23,255);
-  } */
-img[data-estilo="estilo-1"] {
-  right: 47.5rem;
+.imagen1 {
+  display: flex;
+  justify-content:left;
   width: 8rem;
   height: 8rem;
+  
+  
 }
 
 
-nav {
+.nav {
   background-color: rgba(31, 26, 23, 255);
   width: 100%;
   height: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  z-index: 1000; 
+  position: relative;
 }
 
-nav ul {
+.lista {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  z-index: 1000; 
+
 }
 
-nav ul li {
+.lista .item-lista {
   display: grid;
   width: 1rem 1rem;
   padding-left: 1rem;
+  z-index: 1000; 
 }
 
-nav ul li a {
+.nav ul li a {
   display: flex;
   text-decoration: none;
   color: white;
@@ -97,7 +99,7 @@ h2 {
 
 
 
-img[data-estilo="estilo-2"] {
+.iconos{
   background-color: rgb(148, 100, 76);
   border-radius: 0.5rem;
   width: 2rem;
@@ -131,4 +133,23 @@ input {
 
   background-color: rgb(148, 100, 76);
   border-radius: 1rem;
+}
+
+.familiaLanzarini {
+  width: 65rem;
+  height: 40rem;
+}
+
+.container {
+  width: 100rem;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.contenido {
+  width: 50rem;
+  padding: 20px; /* Espaciado interior */
+  
+  
 }
