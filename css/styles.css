@@ -136,8 +136,9 @@ input {
 }
 
 .familiaLanzarini {
-  width: 65rem;
+  width: 55rem;
   height: 40rem;
+
 }
 
 .container {
@@ -147,9 +148,21 @@ input {
   align-items: center; /* Centra verticalmente */
 }
 
+
 .contenido {
-  width: 50rem;
+  width: 80rem;
   padding: 20px; /* Espaciado interior */
   
-  
+}
+.container p {
+  padding: 2rem 2rem;
+}
+
+figcaption {
+  color: grey;
+  font-size: 1rem;
+}
+
+body.Nosotros {
+  background-image: url('/images/patronDeCorcho.webp');
 }
