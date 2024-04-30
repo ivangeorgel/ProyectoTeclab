@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ejemplo.css">
+</head>
+<body>
+    <button id="miBoton">Haz clic aquí</button>
+
+    <style>
+        .botonRedondo {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+    
+    <script>
+        // Función para cambiar la forma del botón
+        function cambiarFormaBoton() {
+            var boton = document.getElementById("miBoton");
+            boton.classList.add("botonRedondo"); // Agregar la clase que define la forma redonda
+        }
+    
+        // Llamar a la función cuando se carga la página o cuando se quiera
+        window.onload = function() {
+            cambiarFormaBoton();
+        };
+    </script>
+    
+
+</body>
+</html>

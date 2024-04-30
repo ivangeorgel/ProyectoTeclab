@@ -14,8 +14,6 @@ html {
   justify-content:left;
   width: 8rem;
   height: 8rem;
-  
-  
 }
 
 
@@ -25,7 +23,6 @@ html {
   height: 8rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   z-index: 1000; 
   position: relative;
 }
@@ -49,6 +46,7 @@ html {
   display: flex;
   text-decoration: none;
   color: white;
+  align-items: center
 }
 
 .background-slide {
@@ -78,12 +76,12 @@ html {
   /* Color del texto */
 }
 
-h1 {
+.Titulo {
   font-size: 7rem;
   /* Tamaño del texto */
 }
 
-h2 {
+.Subtitulo {
   font-size: 2rem;
   top: 28rem;
 }
@@ -112,7 +110,19 @@ h2 {
   top: 10rem;
   left: 2rem;
 }
-
+.iconos2{
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  /* display: grid;
+  grid-template-columns: 2rem;
+  grid-template-rows: 20rem 20rem 20rem; */
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+}
 
 #barraNavegacion:hover {
   background-color: rgb(148, 100, 76);
@@ -165,4 +175,17 @@ figcaption {
 
 body.Nosotros {
   background-image: url('/images/patronDeCorcho.webp');
+}
+
+.footer {
+  height: 10rem;
+  background-color:rgba(31, 26, 23, 255) ;
+  font-size: 1.6rem;
+}
+
+.footer h1,h2 {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: white;
 }
