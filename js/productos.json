@@ -1,0 +1,22 @@
+
+[
+    {
+      "id": 0,
+      "imagen": "&#x1F377",
+      "nombre": "Magneta",
+      "precio": 220
+    },
+    {
+      "id": 1,
+      "imagen": "&#x1F377",
+      "nombre": "Sediendo",
+      "precio": 200
+    },
+    {
+      "id": 2,
+      "imagen": "&#x1F377",
+      "nombre": "Montecepas",
+      "precio": 280
+    }
+  ]
+
