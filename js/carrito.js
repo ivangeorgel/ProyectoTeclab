@@ -1,22 +1,23 @@
-const carritoFruta = []
 
-const agregarAlCarrito = (frutaId) => {
-    if (frutaId > 0){
-        const productoEncontrado = productos.find((producto) => producto.id === parseInt(frutaId))
+const carritoVino = []
+
+const agregarAlCarrito = (vinosId) => {
+    if (vinosId > 0){
+        const productoEncontrado = productos.find((producto) => producto.id === parseInt(vinosId))
         if(productoEncontrado !== undefined){
-            carritoFrutas.push(productoEncontrado)
+            carritoVinos.push(productoEncontrado)
             almacenarCarrito()
         }
     }
 }
 
 const almacenarCarrito = () => {
-    carritoFrutas.length > 0 && localStorage.setItem('carritoFrutas', JSON.stringify(carritoFrutas))
+    carritoVinos.length > 0 && localStorage.setItem('carritoVinos', JSON.stringify(carritoVinos))
 }
 
 const recuperarCarrito = () => {
 
-return JSON.parse(localStorage.getItem('carritoFrutas')) || []
+return JSON.parse(localStorage.getItem('carritoVinos')) || []
 }
 
-const carritoFrutas = recuperarCarrito()
+const carritoVinos = recuperarCarrito()

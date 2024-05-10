@@ -1,15 +1,18 @@
 
 
+/*Lo que va a hacer el metodo "querySelector" va a ser es vincularlo con un"div", que tiene la clase CSS "container"*/
+/*En ese div conteiner esta la TARJETA */
+
+
+
+
 const productos = []
 const URL = "js/productos.json"
 
 const container = document.querySelector('div.container'); 
 
 
-
-
 const retornarCardHTML = (producto) => {
-
 
     return`<div class="card">
                 <div class="card-image">${producto.imagen}</div>
@@ -35,9 +38,6 @@ const activaClickEnBotones = () => {
 
 
 
-
-
-
 const cargarProductos = (array) => {
     if(array.length > 0) {
     array.forEach((producto) => {
@@ -46,7 +46,6 @@ const cargarProductos = (array) => {
         activaClickEnBotones();
     }
 }
-
 
 
 

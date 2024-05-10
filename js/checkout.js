@@ -11,15 +11,15 @@ const retornarTableHTML = (producto) => {
     `
 };
 
-if(carritoFrutas.length > 0){
+if(carritoVinos.length > 0){
     tbody.innerHTML = ""
-    carritoFrutas.forEach(
+    carritoVinos.forEach(
         (producto) => (tbody.innerHTML += retornarTableHTML(producto))
     )
 }
 
 btnComprar.addEventListener("click", ()=>{
     alert("Muchas gracias por su compra!!!")
-    localStorage.removeItem("carritoFrutas")
+    localStorage.removeItem("carritoVinos")
     tbody.innerHTML = ""
 })

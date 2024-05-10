@@ -1,22 +1,23 @@
 
 [
-    {
-      "id": 0,
-      "imagen": "&#x1F377",
-      "nombre": "Magneta",
-      "precio": 220
-    },
-    {
-      "id": 1,
-      "imagen": "&#x1F377",
-      "nombre": "Sediendo",
-      "precio": 200
-    },
-    {
-      "id": 2,
-      "imagen": "&#x1F377",
-      "nombre": "Montecepas",
-      "precio": 280
-    }
-  ]
+  {
+    "id": 2,
+    "imagen": "🍈",
+    "nombre": "Bananas",
+    "precio": 220
+  },
+  {
+    "id": 3,
+    "imagen": "🍎",
+    "nombre": "Manzanas",
+    "precio": 200
+  },
+  {
+    "id": 4,
+    "imagen": "🥝",
+    "nombre": "Kiwis",
+    "precio": 280
+  }
+]
+
 

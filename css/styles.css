@@ -86,7 +86,7 @@ html {
   top: 28rem;
 }
 
-.button {
+.butt {
   display: flex;
   justify-content: center;
   position: relative;
@@ -261,9 +261,16 @@ form.Contact {
 
 /* -------------------------------------------- */
 
-
+button {
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
+  top: 1.2rem;
+  /* opacity: 0.9; */
+  /* width: 100%; */
+}
 .container {
-  gap: 30px;
+  gap: 3rem;
   display: flex;
   flex-direction:row;
   align-items: center;
@@ -273,34 +280,40 @@ form.Contact {
 }
 
 .card {
-  box-shadow: 5px 20px 20px grey;
+  box-shadow: 0.5rem 2rem 2rem grey;
   border: 1px solid rgba(211, 211, 211, 0.384);
-  border-radius: 8px;
-  height: 230px;
-  width: 180px;
-  background-color: white;
+  border-radius: 0.8rem;
+  height: 43rem;
+  width: 28rem;
+  background-color: rgb(29, 27, 27);
 }
 .card:hover {
   transition: .5s ease-in;
-  box-shadow: 5px 20px 60px rgba(211, 211, 211, 0.519);
+  box-shadow: 0.5rem 2rem 6rem rgba(211, 211, 211, 0.519);
 }
 .card .card-image {
-  text-align: center;
-  font-size: 60px;
+  /* text-align: center;
+  font-size: 6rem;
   display: block;
+  width: 1fr; */
+  font-size: 6rem;
+  display: flex;
   width: 1fr;
-}
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  }
 
 .card .card-name {
   text-align: center;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   display: block;
   width: 1fr;
 }
 .card .card-price {
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   display: block;
   width: 1fr;
@@ -310,18 +323,18 @@ form.Contact {
   display: block;
 }
 .button-add {
-  border-radius: 10px;
-  outline: 1px solid blueviolet !important;
+  border-radius: 1rem;
+  outline: 1rem solid blueviolet !important;
 }
 .card .card-button button {
-  margin-top: 10px;
-  font-size: 20px !important;
+  margin-top: 1rem;
+  font-size: 2rem !important;
 }
 .card .card-button .disabled {
   background-color: lightgray !important;
   color: whitesmoke !important;
 }
-.card .card-button button:active {
+/* .card .card-button button:active {
   background: darkmagenta !important;
   color: white !important;
 }
@@ -343,24 +356,26 @@ form.Contact {
   border-radius: 10px;
   background-color: rgba(90, 0, 139, 0.373);
   box-shadow: 5px 10px 40px lightgray;
-}
+} */
 
 .btn-checkout {
-  background-color: rgba(139, 0, 139, 0.175) !important;
+  /* background-color: rgba(139, 0, 139, 0.175) !important;
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 10px;
   display: inline;
-  padding: 10px;
-  float: right;
-  height: 70px;
-  width: 70px;
+  padding: 10px; */
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 60rem;
+  
 }
-.btn-checkout img {
-  width: 60px;
+.boton-carrito {
+  font-size: 4rem;
 }
-btn-checkout:hover {
-  box-shadow: 4px 4px 10px ligthgray;
+.btn-checkout:hover {
+  box-shadow: 0.4rem 0.4rem 1rem ligthgray;
   transition: 0.17s ease-in;
 }
 .btn-checkout:active {
@@ -369,12 +384,12 @@ btn-checkout:hover {
 }
 .form-checkout {
   background-color: rgba(139, 0, 139, 0.102);
-  border-radius: 5px;
+  border-radius: 0.5rem;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem;
   width: 80%;
 }
-thead tr {
+/* thead tr {
   background-color: darkmagenta;
   color: white;
 }
@@ -392,4 +407,17 @@ tbody tr:nth-child(even) {
 }
 #btnComprar:active {
   background-color: black;
+} */
+
+
+.claseDeVino {
+  width: 7rem;
+}
+body.checkout {
+  background-image: url('/images/micro_carbon.png');
+}
+
+.card-image img {
+  width: 50rem; /* Ajusta el ancho al 100% del contenedor */
+  height: 50rem; /* Altura automática para mantener la proporción de la imagen */
 }
