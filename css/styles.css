@@ -262,20 +262,18 @@ form.Contact {
 /* -------------------------------------------- */
 
 button {
-  /* display: flex;
-  justify-content: center; */
+  
   position: relative;
   top: 1.2rem;
-  /* opacity: 0.9; */
-  /* width: 100%; */
+  
 }
 .container {
   gap: 3rem;
   display: flex;
-  flex-direction:row;
-  align-items: center;
+  flex-direction:column;
+  align-items: flex-end;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: right;
   
 }
 
@@ -284,18 +282,18 @@ button {
   border: 1px solid rgba(211, 211, 211, 0.384);
   border-radius: 0.8rem;
   height: 43rem;
-  width: 28rem;
+  width: 40rem;
   background-color: rgb(29, 27, 27);
+  margin-bottom: 4rem;
+  margin-right: 4rem;
+  margin-top: 4rem;
 }
 .card:hover {
   transition: .5s ease-in;
   box-shadow: 0.5rem 2rem 6rem rgba(211, 211, 211, 0.519);
 }
 .card .card-image {
-  /* text-align: center;
-  font-size: 6rem;
-  display: block;
-  width: 1fr; */
+  
   font-size: 6rem;
   display: flex;
   width: 1fr;
@@ -334,37 +332,10 @@ button {
   background-color: lightgray !important;
   color: whitesmoke !important;
 }
-/* .card .card-button button:active {
-  background: darkmagenta !important;
-  color: white !important;
-}
-.sin-stock {
-  filter: grayscale(100%) opacity(40%); 
-}
-.card-error {
-  box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.147);
-  border: 1px solid darkred;
-  border-radius: 6px;
-  padding: 40px;
-  color: red;
-}
-.centrar-div {
-  text-align: center;
-}
-.formulario {
-  padding: 40px;
-  border-radius: 10px;
-  background-color: rgba(90, 0, 139, 0.373);
-  box-shadow: 5px 10px 40px lightgray;
-} */
+
 
 .btn-checkout {
-  /* background-color: rgba(139, 0, 139, 0.175) !important;
-  border-radius: 50%;
-  margin-right: 10px;
-  margin-top: 10px;
-  display: inline;
-  padding: 10px; */
+  
   display: flex;
   align-items: center;
   position: relative;
@@ -389,29 +360,10 @@ button {
   padding: 2rem;
   width: 80%;
 }
-/* thead tr {
-  background-color: darkmagenta;
-  color: white;
-}
-#tablehead {
-  padding: 10px;
-}
-tbody tr:nth-child(even) {
-  background: rgba(173, 216, 230, 0.252) !important;
-}
-.centrar {
-  text-align: center;
-}
-#btnComprar:hover {
-  background-color: darkviolet;
-}
-#btnComprar:active {
-  background-color: black;
-} */
-
 
 .claseDeVino {
-  width: 7rem;
+  width: 4rem;
+  height: 5rem;
 }
 body.checkout {
   background-image: url('/images/micro_carbon.png');
@@ -420,4 +372,69 @@ body.checkout {
 .card-image img {
   width: 50rem; /* Ajusta el ancho al 100% del contenedor */
   height: 50rem; /* Altura automática para mantener la proporción de la imagen */
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Columna para el nombre y precio, columna para la cantidad y descripción */
+  gap: 10px;
+}
+
+.cart-item h3 {
+  margin: 0;
+}
+
+.cart-item p {
+  margin: 0;
+}
+
+.cart-item p:last-of-type {
+  font-style: italic;
+  color: #888;
+}
+
+.descripcion {
+  width: 4rem;
+  height: 4rem;
+  /* z-index: 2; */
+}
+
+.container_description {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/* .container_description {
+  display: flex;
+  flex-direction: row; 
+}
+
+ /* .descripcion {
+  align-items: flex-start;
+}
+
+.descripcion + span {
+  margin-left: 10px; 
+}  */ 
+
+.float-left {
+  float: left;
+}
+.container_description {
+  display: inline-block;
+  display: flex; /* Make them inline elements */
+  align-items: center; /* Align the text and icon in the center vertically */
+  margin-bottom: 1rem; /*Add some margin for spacing*/
+}
+.descripcion {
+  margin-right: 1rem; /* Add some margin to the right of the icons */
+}
+.icon-description {
+  font-weight: bold; /* Make the text bold */
 }
