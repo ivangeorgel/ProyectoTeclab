@@ -425,12 +425,16 @@ body.checkout {
 
 .float-left {
   float: left;
+  height: 50rem;
+  width: 10rem;
 }
 .container_description {
+  /* display: flex; 
+  align-items: center; 
+  margin-bottom: 1rem; 
+  float: left;
+  width: 10rem; */
   display: inline-block;
-  display: flex; /* Make them inline elements */
-  align-items: center; /* Align the text and icon in the center vertically */
-  margin-bottom: 1rem; /*Add some margin for spacing*/
 }
 .descripcion {
   margin-right: 1rem; /* Add some margin to the right of the icons */
