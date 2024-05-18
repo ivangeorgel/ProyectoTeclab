@@ -72,7 +72,7 @@ html {
   left: 51.5rem;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  /* color: white; */
   /* Color del texto */
 }
 
@@ -243,6 +243,7 @@ body.Vinos {
   height: 10rem;
   background-color:rgba(31, 26, 23, 255) ;
   font-size: 1.6rem;
+  position: static;
 }
 
 .footer h1,h2 {
@@ -267,25 +268,27 @@ button {
   top: 1.2rem;
   
 }
-.container {
+.container-card {
   gap: 3rem;
   display: flex;
   flex-direction:column;
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: right;
-  
+  width: 40rem;
+  /*float: right; */
+
 }
 
 .card {
   box-shadow: 0.5rem 2rem 2rem grey;
   border: 1px solid rgba(211, 211, 211, 0.384);
   border-radius: 0.8rem;
-  height: 43rem;
+  height: 38rem;
   width: 40rem;
   background-color: rgb(29, 27, 27);
   margin-bottom: 4rem;
-  margin-right: 4rem;
+  margin-left: 4rem;
   margin-top: 4rem;
 }
 .card:hover {
@@ -334,6 +337,8 @@ button {
 }
 
 
+/* Carrito */
+
 .btn-checkout {
   
   display: flex;
@@ -361,9 +366,10 @@ button {
   width: 80%;
 }
 
+/* Cards */
 .claseDeVino {
-  width: 4rem;
-  height: 5rem;
+  width: 7rem;
+  height: 23rem;
 }
 body.checkout {
   background-image: url('/images/micro_carbon.png');
@@ -399,46 +405,112 @@ body.checkout {
 .descripcion {
   width: 4rem;
   height: 4rem;
-  /* z-index: 2; */
+  margin-right: 4rem;
 }
 
 .container_description {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
+  display: inline-block;
+  width: 40rem;
 }
 
-
-/* .container_description {
-  display: flex;
-  flex-direction: row; 
-}
-
- /* .descripcion {
-  align-items: flex-start;
-}
-
-.descripcion + span {
-  margin-left: 10px; 
-}  */ 
 
 .float-left {
   float: left;
-  height: 50rem;
-  width: 10rem;
+  height: 30rem;
+  width: 40rem;
 }
-.container_description {
-  /* display: flex; 
-  align-items: center; 
-  margin-bottom: 1rem; 
-  float: left;
-  width: 10rem; */
-  display: inline-block;
-}
-.descripcion {
-  margin-right: 1rem; /* Add some margin to the right of the icons */
-}
+
+
 .icon-description {
   font-weight: bold; /* Make the text bold */
 }
+
+
+
+
+
+/* Botella de vino */
+.wine-bottle {
+  width: 7rem;
+  height: 23rem;
+  clip-path: polygon(
+      50% 0%,   /* Parte superior del cuello */
+      45% 5%,   /* Cuello de la botella */
+      40% 10%,  /* Cuello de la botella */
+      35% 15%,  /* Cuello de la botella */
+      30% 20%,  /* Cuello de la botella */
+      25% 25%,  /* Cuello de la botella */
+      20% 30%,  /* Comienzo del cuerpo de la botella */
+      15% 35%,  /* Parte media del cuerpo */
+      10% 40%,  /* Parte media del cuerpo */
+      5% 45%,   /* Parte media del cuerpo */
+      0% 50%,   /* Parte más ancha de la botella */
+      0% 90%,   /* Parte más ancha de la base */
+      5% 95%,   /* Base */
+      95% 95%,  /* Base */
+      100% 90%, /* Parte más ancha de la base */
+      100% 50%, /* Parte más ancha de la botella */
+      95% 45%,  /* Parte media del cuerpo */
+      90% 40%,  /* Parte media del cuerpo */
+      85% 35%,  /* Parte media del cuerpo */
+      80% 30%,  /* Comienzo del cuerpo de la botella */
+      75% 25%,  /* Cuello de la botella */
+      70% 20%,  /* Cuello de la botella */
+      65% 15%,  /* Cuello de la botella */
+      60% 10%,  /* Cuello de la botella */
+      55% 5%,   /* Cuello de la botella */
+      50% 0%    /* Parte superior del cuello */
+  );
+}
+
+
+/* Grafico */
+.main-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40rem;
+  float: right;
+}
+
+.content-grafico-caract {
+  display: flex;
+  flex-direction: column; 
+}
+ 
+.chart {
+  width: 50rem;
+  font-family: Arial, sans-serif;
+  float: left;
+}
+
+
+.chart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chart-item span {
+  width: 20%;
+  text-align: center;
+}
+
+.bar-container {
+  flex-grow: 1;
+  height: 20px;
+  background-color: #f3f3f3;
+  position: relative;
+  
+}
+
+.bar {
+  height: 100%;
+  background-color: #b22222;
+} 
+
+
