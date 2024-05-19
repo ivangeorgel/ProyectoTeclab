@@ -420,9 +420,25 @@ body.checkout {
 
 .float-left {
   float: left;
-  height: 30rem;
+  height: 25rem;
   width: 40rem;
+  margin-top: 4.5rem;
 }
+
+.float-left-2 {
+  float: left;
+  height: 25rem;
+  width: 40rem;
+  margin-top: 13rem
+}
+.float-left-3 {
+  float: left;
+  height: 25rem;
+  width: 40rem;
+  margin-top: 11rem
+}
+
+
 
 
 .icon-description {
