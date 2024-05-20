@@ -46,7 +46,8 @@ html {
   display: flex;
   text-decoration: none;
   color: white;
-  align-items: center
+  align-items: center;
+  width: 7rem;
 }
 
 .background-slide {
@@ -79,6 +80,7 @@ html {
 .Titulo {
   font-size: 7rem;
   /* Tamaño del texto */
+  color:white;
 }
 
 .Subtitulo {
@@ -86,6 +88,7 @@ html {
   top: 28rem;
 }
 
+/*Boton de la pagina principal*/
 .butt {
   display: flex;
   justify-content: center;
@@ -96,7 +99,7 @@ html {
 }
 
 
-/**/
+
 
 #nextBtn{
   position: relative;
@@ -151,9 +154,9 @@ html {
       }
 /**/
 
-
+/* Iconos */
 .iconos{
-  background-color: rgb(148, 100, 76);
+  background-color: white;
   border-radius: 0.5rem;
   width: 2rem;
   height: 2rem;
@@ -183,6 +186,8 @@ html {
   background-color: rgb(148, 100, 76);
   height: 7rem;
 }
+
+/* formulario */
 
 label {
   width: 40rem;
@@ -234,7 +239,7 @@ body.Nosotros {
   background-image: url('/images/patronDeCorcho.webp');
 }
 body.Contactos {
-  background-image: url('/images/micro_carbon.png');
+  background-image: url('/images/patronDeCorcho.webp');
 }
 body.Vinos {
   background-image: url('/images/patronDeCorcho.webp');
@@ -269,7 +274,7 @@ button {
   
 }
 .container-card {
-  gap: 3rem;
+  gap: 19rem;
   display: flex;
   flex-direction:column;
   align-items: flex-end;
@@ -277,23 +282,27 @@ button {
   justify-content: right;
   width: 40rem;
   /*float: right; */
+  margin-bottom: 7rem;
 
 }
 
 .card {
-  box-shadow: 0.5rem 2rem 2rem grey;
+  /* box-shadow: 0.5rem 2rem 2rem grey; */
   border: 1px solid rgba(211, 211, 211, 0.384);
   border-radius: 0.8rem;
   height: 38rem;
-  width: 40rem;
-  background-color: rgb(29, 27, 27);
+  width: 25rem;
+  background-color: white;
   margin-bottom: 4rem;
   margin-left: 4rem;
   margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .card:hover {
   transition: .5s ease-in;
-  box-shadow: 0.5rem 2rem 6rem rgba(211, 211, 211, 0.519);
+  box-shadow: 0.5rem 2rem 6rem rgba(31, 26, 23, 255);
 }
 .card .card-image {
   
@@ -402,6 +411,9 @@ body.checkout {
   color: #888;
 }
 
+
+/* Descripcion de los vinos */
+
 .descripcion {
   width: 4rem;
   height: 4rem;
@@ -429,13 +441,13 @@ body.checkout {
   float: left;
   height: 25rem;
   width: 40rem;
-  margin-top: 13rem
+  margin-top: 14rem;
 }
 .float-left-3 {
   float: left;
   height: 25rem;
   width: 40rem;
-  margin-top: 11rem
+  margin-top: 15.5rem;
 }
 
 
@@ -446,41 +458,12 @@ body.checkout {
 }
 
 
-
-
-
-/* Botella de vino */
-.wine-bottle {
-  width: 7rem;
-  height: 23rem;
-  clip-path: polygon(
-      50% 0%,   /* Parte superior del cuello */
-      45% 5%,   /* Cuello de la botella */
-      40% 10%,  /* Cuello de la botella */
-      35% 15%,  /* Cuello de la botella */
-      30% 20%,  /* Cuello de la botella */
-      25% 25%,  /* Cuello de la botella */
-      20% 30%,  /* Comienzo del cuerpo de la botella */
-      15% 35%,  /* Parte media del cuerpo */
-      10% 40%,  /* Parte media del cuerpo */
-      5% 45%,   /* Parte media del cuerpo */
-      0% 50%,   /* Parte más ancha de la botella */
-      0% 90%,   /* Parte más ancha de la base */
-      5% 95%,   /* Base */
-      95% 95%,  /* Base */
-      100% 90%, /* Parte más ancha de la base */
-      100% 50%, /* Parte más ancha de la botella */
-      95% 45%,  /* Parte media del cuerpo */
-      90% 40%,  /* Parte media del cuerpo */
-      85% 35%,  /* Parte media del cuerpo */
-      80% 30%,  /* Comienzo del cuerpo de la botella */
-      75% 25%,  /* Cuello de la botella */
-      70% 20%,  /* Cuello de la botella */
-      65% 15%,  /* Cuello de la botella */
-      60% 10%,  /* Cuello de la botella */
-      55% 5%,   /* Cuello de la botella */
-      50% 0%    /* Parte superior del cuello */
-  );
+/* Tamaño de los titulos del grafico y las caracteristicas */
+.chart-titulo-caract {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -502,6 +485,7 @@ body.checkout {
   width: 50rem;
   font-family: Arial, sans-serif;
   float: left;
+  margin-top: 4rem;
 }
 
 
@@ -521,7 +505,7 @@ body.checkout {
   height: 20px;
   background-color: #f3f3f3;
   position: relative;
-  
+  margin-top: 1.5rem;
 }
 
 .bar {

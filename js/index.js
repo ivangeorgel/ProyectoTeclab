@@ -61,17 +61,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Grafico
 
-document.addEventListener('DOMContentLoaded', function () {
-  const data = [
-      { flavor: 'Ligero', value: 70 },
-      { flavor: 'Suave', value: 40 },
-      { flavor: 'Seco', value: 20 },
-      { flavor: 'Débil', value: 60 },
-  ];
+// document.addEventListener('DOMContentLoaded', function () {
+//   const data = [
+//       { flavor: 'Ligero', value: 70 },
+//       { flavor: 'Suave', value: 40 },
+//       { flavor: 'Seco', value: 20 },
+//       { flavor: 'Débil', value: 60 },
+//   ];
 
-  const bars = document.querySelectorAll('.bar');
+//   const bars = document.querySelectorAll('.bar');
 
-  bars.forEach((bar, index) => {
-      bar.style.width = data[index].value + '%';
-  });
-});
+//   bars.forEach((bar, index) => {
+//       bar.style.width = data[index].value + '%';
+//   });
+// });
+
