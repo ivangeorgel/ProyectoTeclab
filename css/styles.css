@@ -12,7 +12,7 @@ html {
 
 .imagen1 {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   width: 8rem;
   height: 8rem;
 }
@@ -25,7 +25,7 @@ html {
   height: 8rem;
   display: flex;
   flex-direction: row;
-  z-index: 1000; 
+  z-index: 1000;
   position: relative;
 }
 
@@ -33,7 +33,7 @@ html {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  z-index: 1000; 
+  z-index: 1000;
 
 }
 
@@ -41,7 +41,7 @@ html {
   display: grid;
   width: 1rem 1rem;
   padding-left: 1rem;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .nav ul li a {
@@ -51,6 +51,11 @@ html {
   align-items: center;
   width: 7rem;
   justify-content: center;
+}
+
+#barraNavegacion:hover {
+  background-color: rgb(148, 100, 76);
+  height: 7rem;
 }
 
 /* Fondos de pantallas */
@@ -84,13 +89,16 @@ html {
 .Titulo {
   font-size: 7rem;
   /* Tamaño del texto */
-  color:white;
+  color: white;
 }
 
 .Subtitulo {
+  display: flex;
   font-size: 2rem;
-  top: 28rem;
+  justify-content: flex-end;
+  color: white;
 }
+
 
 /*Boton de la pagina principal*/
 .butt {
@@ -105,7 +113,7 @@ html {
 
 
 
-#nextBtn{
+#nextBtn {
   position: relative;
   padding: 1rem 1rem;
   text-decoration: none;
@@ -115,51 +123,55 @@ html {
   z-index: 2;
   border-radius: 1rem;
 }
-  
-  #nextBtn {
-      border: 3px solid rebeccapurple;
-      overflow: hidden;
+
+#nextBtn {
+  border: 3px solid rebeccapurple;
+  overflow: hidden;
+}
+
+#nextBtn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rebeccapurple;
+  z-index: -2
+}
+
+#nextBtn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  left: 0;
+  bottom: -150%;
+  border-radius: 30%;
+  background-color: rgb(148, 100, 76);
+  z-index: -1;
+}
+
+#nextBtn:hover::before {
+  animation: nextBtn 2s linear both;
+}
+
+@keyframes nextBtn {
+
+  0% {
+    transform: rotate(0deg);
   }
-  #nextBtn::after{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-color: rebeccapurple;
-      z-index: -2
+
+  100% {
+    bottom: 100px;
+    transform: rotate(360deg);
   }
-  #nextBtn::before{    
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 250px;
-      left: 0;
-      bottom: -150%;
-      border-radius: 30%;
-      background-color:  rgb(148, 100, 76);
-      z-index: -1;
-  }
-  
-  #nextBtn:hover::before {
-      animation: nextBtn 2s linear both;
-  }
-  
-  @keyframes nextBtn {
-  
-      0% {
-      transform: rotate(0deg);
-      }
-      100%{
-      bottom: 100px;
-      transform: rotate(360deg);
-      }
-      }
+}
+
 /**/
 
 /* Iconos */
-.iconos{
+.iconos {
   background-color: white;
   border-radius: 0.5rem;
   width: 2rem;
@@ -173,26 +185,25 @@ html {
   left: 2rem;
 }
 
-.iconos2{
+/* Iconos de la barra de navegacion */
+.iconos2 {
   background-color: white;
   border-radius: 0.5rem;
   width: 2rem;
   height: 2rem;
-  margin: 2rem;
+  margin: 1rem;
   /* display: grid;
   grid-template-columns: 2rem;
   grid-template-rows: 20rem 20rem 20rem; */
   position: relative;
   top: 10rem;
-  left: 2rem;
+  left: 8rem;
+  display: flex;
+  flex-direction: row;
 }
 
-#barraNavegacion:hover {
-  background-color: rgb(148, 100, 76);
-  height: 7rem;
-}
 
-/* formulario */ 
+/* formulario */
 .form {
   width: 100%;
 }
@@ -215,7 +226,7 @@ html {
 } */
 
 label {
-  
+
   display: grid;
   justify-content: center;
   grid-template-columns: 30rem;
@@ -223,19 +234,22 @@ label {
   gap: 1rem;
 
 }
+
 input {
   border-radius: 1rem;
   margin-top: 2rem;
 }
+
 span.Formulario {
   color: white;
   font-size: 5rem;
   display: flex;
   justify-content: center;
 }
+
 .button-formulario {
   display: block;
-  margin: 0 auto;  
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
@@ -249,16 +263,20 @@ span.Formulario {
 .container2 {
   width: 100rem;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
 }
 
 /* Contenedor de Nosotros */
 .contenido {
   width: 80rem;
-  padding: 20px; /* Espaciado interior */
-  
+  padding: 20px;
+  /* Espaciado interior */
+
 }
+
 .container p {
   padding: 2rem 2rem;
 }
@@ -272,46 +290,73 @@ figcaption {
 body.Nosotros {
   background-image: url('/images/patronDeCorcho.webp');
 }
+
 body.Contactos {
   background-image: url('/images/patronDeCorcho.webp');
 }
+
 body.Vinos {
   background-image: url('/images/patronDeCorcho.webp');
 }
 
 /* Footer */
 
-.footer {
+/* .footer {
   height: 10rem;
   background-color:rgba(31, 26, 23, 255) ;
   font-size: 1.6rem;
   position: static;
 }
 
+
 .footer h1,h2 {
 display: flex;
-justify-content: flex-end;
-align-items: center;
+
+flex-direction: row;
 color: white;
-}
+} */
 
-form.Contact {
-  width: 20rem;
+/* Footer */
+.footer {
+  height: 15rem;
+  background-color: rgba(31, 26, 23, 255);
+  font-size: 1.6rem;
   display: flex;
-  align-items:end;
+  justify-content: center;
+  align-items: center;
 }
 
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60rem;
+  color: white;
+}
 
+.footer-content h1,
+.footer-content h2 {
+  margin: 0 1rem;
+  /* Espacio entre los elementos */
+}
 
-
-
+.footer-content h1 span,
+.footer-content h2 span {
+  margin-right: 0.5rem;
+  /* Espacio entre el icono y el texto */
+}
 
 
 
 /* Carrito */
+form.Contact {
+  width: 20rem;
+  display: flex;
+  align-items: end;
+}
 
 .btn-checkout {
-  
+
   display: flex;
   align-items: center;
   justify-content: end;
@@ -319,17 +364,21 @@ form.Contact {
   width: 100%;
   padding-right: 3rem;
 }
+
 .boton-carrito {
   font-size: 4rem;
 }
+
 .btn-checkout:hover {
   box-shadow: 0.4rem 0.4rem 1rem ligthgray;
   transition: 0.17s ease-in;
 }
+
 .btn-checkout:active {
   transition: 0.3s ease-out;
   filter: grayscale(100%)
 }
+
 .form-checkout {
   background-color: rgba(139, 0, 139, 0.102);
   border-radius: 0.5rem;
@@ -342,7 +391,7 @@ form.Contact {
 .container-card {
   gap: 19rem;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-end;
   flex-wrap: wrap;
   justify-content: right;
@@ -366,19 +415,21 @@ form.Contact {
   align-items: center;
   flex-direction: column;
 }
+
 .card:hover {
   transition: .5s ease-in;
   box-shadow: 0.5rem 2rem 6rem rgba(31, 26, 23, 255);
 }
+
 .card .card-image {
-  
+
   font-size: 6rem;
   display: flex;
   width: 1fr;
   justify-content: center;
   align-items: center;
   height: 30rem;
-  }
+}
 
 .card .card-name {
   text-align: center;
@@ -387,6 +438,7 @@ form.Contact {
   display: block;
   width: 1fr;
 }
+
 .card .card-price {
   text-align: center;
   font-size: 2rem;
@@ -394,6 +446,7 @@ form.Contact {
   display: block;
   width: 1fr;
 }
+
 /* .card .card-button {
   text-align: center;
   display: block;
@@ -415,13 +468,16 @@ form.Contact {
   width: 7rem;
   height: 23rem;
 }
+
 body.checkout {
   background-image: url('/images/micro_carbon.png');
 }
 
 .card-image img {
-  width: 50rem; /* Ajusta el ancho al 100% del contenedor */
-  height: 50rem; /* Altura automática para mantener la proporción de la imagen */
+  width: 50rem;
+  /* Ajusta el ancho al 100% del contenedor */
+  height: 50rem;
+  /* Altura automática para mantener la proporción de la imagen */
 }
 
 .cart-item {
@@ -429,7 +485,8 @@ body.checkout {
   padding: 10px;
   margin-bottom: 10px;
   display: grid;
-  grid-template-columns: auto 1fr; /* Columna para el nombre y precio, columna para la cantidad y descripción */
+  grid-template-columns: auto 1fr;
+  /* Columna para el nombre y precio, columna para la cantidad y descripción */
   gap: 10px;
 }
 
@@ -478,6 +535,7 @@ body.checkout {
   width: 40rem;
   margin-top: 14rem;
 }
+
 .float-left-3 {
   float: left;
   height: 25rem;
@@ -489,7 +547,8 @@ body.checkout {
 
 
 .icon-description {
-  font-weight: bold; /* Make the text bold */
+  font-weight: bold;
+  /* Make the text bold */
 }
 
 
@@ -513,9 +572,9 @@ body.checkout {
 
 .content-grafico-caract {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
- 
+
 .chart {
   width: 50rem;
   font-family: Arial, sans-serif;
@@ -546,6 +605,4 @@ body.checkout {
 .bar {
   height: 100%;
   background-color: #b22222;
-} 
-
-
+}
