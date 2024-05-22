@@ -13,42 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cartItemsContainer.textContent = "No hay vinos en el carrito.";
     }
 
-    // function getWineInfoById(id) {
-    //     // Aquí deberías tener una función que obtenga la información del vino por su ID.
-    //     // Esto podría ser un llamado a una API o un objeto local, dependiendo de cómo esté estructurada tu aplicación.
-    //     // Por simplicidad, aquí creamos un objeto estático con la información de algunos vinos.
-        
-        
-    //     function getWinesFromCards() {
-    //         const wines = [];
-    //         const cardElements = document.querySelectorAll('.card');
-        
-    //         cardElements.forEach(card => {
-    //             const name = card.querySelector('h3').innerText;
-    //             const priceText = card.querySelector('p:nth-of-type(1)').innerText;
-    //             const price = parseFloat(priceText.replace('Precio: $', ''));
-    //             const description = card.querySelector('p:nth-of-type(2)').innerText;
-        
-    //             wines.push({ name, price, description });
-    //         });
-        
-    //         return wines;
-    //     }
-        
-    //     // Ejemplo de uso:
-    //     const winesFromCards = getWinesFromCards();
-    //     console.log(winesFromCards);
 
-
-
-    //     // -----------------
-    //     const wines = {
-    //         '1': { name: 'Vino 1', price: 20, description: 'Descripción del Vino 1' },
-    //         // Otros vinos...
-    //     };
-
-    //     return wines[id];
-    // }
 
     function getWineInfoById(id) {
         const wines = {

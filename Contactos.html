@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/index.js"></script>
+    <script defer src="./js/index.js"></script> <!-- Asegúrate de que el JavaScript se cargue después del DOM -->
     <title>Bodegas Lanzarini</title>
 </head>
 <body class="Contactos">
     <header>
-        
         <nav class="nav">
             <a href="/Home.html"><img src="./images/Logo.jpg" alt="" class="imagen1"></a>
             <ul class="lista">                               
@@ -25,21 +24,7 @@
         </nav>
     </header>
     <main>
-        <!-- <div class="Form">
-            <form class="Contac">
-            <label for="nombre">
-              <span class="Formulario">CONTACTANOS</span>
-              <input type="text" id="Nombre" placeholder="Nombre" />
-              <input type="text" id="Email" placeholder="Email" />
-              <input type="text" id="Mensaje" placeholder="Mensaje" />
-            </label>
-           
-            </label>
-            </form>
-        </div>
-         -->
-
-         <div class="Form">
+        <div class="Form">
             <form class="Contac" id="contactForm">
                 <label for="nombre">
                     <span class="Formulario">CONTACTANOS</span>
@@ -47,26 +32,18 @@
                     <input type="email" id="Email" placeholder="Email" required />
                     <input type="text" id="Mensaje" placeholder="Mensaje" required />
                 </label>
-                <button type="submit">Enviar</button>
+                <button class="button-formulario" type="submit">Enviar</button>
             </form>
         </div>
-        
-          
-            <figure>
-                <a href="https://www.facebook.com/bodegalanzarini?locale=es_LA"><img src="./icons/Facebook.png" alt="Facebook" class="iconos2"></a> 
-                <a href="https://www.instagram.com/bodegalanzarini/"><img src="./icons/instagram.png" alt="Instagram" class="iconos2"></a>
-                <a href="https://x.com/BodegaLanzarini?t=5YaHzGkBzKN4i7UpdHktNw&s=08 "><img src="./icons/x.png" alt="x" class="iconos2">  </a>              
-            </figure>   
-        </div>
-        
+        <figure>
+            <a href="https://www.facebook.com/bodegalanzarini?locale=es_LA"><img src="./icons/Facebook.png" alt="Facebook" class="iconos2"></a> 
+            <a href="https://www.instagram.com/bodegalanzarini/"><img src="./icons/instagram.png" alt="Instagram" class="iconos2"></a>
+            <a href="https://x.com/BodegaLanzarini?t=5YaHzGkBzKN4i7UpdHktNw&s=08 "><img src="./icons/x.png" alt="x" class="iconos2">  </a>              
+        </figure>   
     </main>
     <footer class="footer">
-        
         <h1><span class="material-symbols-outlined">call</span>0263 444-2291</h1>
         <h2><span class="material-symbols-outlined">mail</span>arlanzarini@lanzarini.com</h2>
     </footer>
-    
 </body>
-
-
 </html>
