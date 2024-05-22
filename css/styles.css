@@ -48,6 +48,7 @@ html {
   color: white;
   align-items: center;
   width: 7rem;
+  justify-content: center;
 }
 
 .background-slide {
@@ -168,6 +169,7 @@ html {
   top: 10rem;
   left: 2rem;
 }
+
 .iconos2{
   background-color: white;
   border-radius: 0.5rem;
@@ -187,12 +189,18 @@ html {
   height: 7rem;
 }
 
-/* formulario */
+/* formulario */ 
+.form {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
 
 label {
-  width: 40rem;
+  /* width: 40rem; */
   display: grid;
-  justify-content: center;
+  /* justify-content: center; */
   grid-template-columns: 30rem;
   grid-template-rows: 5rem 5rem 5rem 30rem;
   gap: 1rem;
@@ -352,9 +360,10 @@ button {
   
   display: flex;
   align-items: center;
-  position: relative;
-  left: 60rem;
-  
+  justify-content: end;
+  /* float: right; */
+  width: 100%;
+  padding-right: 3rem;
 }
 .boton-carrito {
   font-size: 4rem;

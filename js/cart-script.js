@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getWineInfoById(id) {
         const wines = {
-            '1': { name: 'Montecepas', price: 20, description: 'Descripción del Montecepas' },
-            '2': { name: 'Magneta', price: 20, description: 'Descripción del Magneta' },
-            '3': { name: 'Sediento', price: 20, description: 'Descripción del Sediento' },
+            '1': { name: 'Magneta', price: 7000, description: 'Vino tinto Malbec.' },
+            '2': { name: 'Montecepas', price: 6800, description: 'Vino blanco Cabernet Sauvignon.' },
+            '3': { name: 'Sediento', price: 8000, description: 'Vino tindo Malbec Bonarda.' },
         };
     
         return wines[id];

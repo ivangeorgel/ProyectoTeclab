@@ -1,3 +1,5 @@
+
+// CARDS DEL CARRITO
 document.addEventListener('DOMContentLoaded', function() {
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
@@ -23,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// -----------------------------------
+// IMAGENES DE FONDO
 
 
 
@@ -76,3 +78,28 @@ document.addEventListener("DOMContentLoaded", function() {
 //   });
 // });
 
+
+
+
+// VALIDACIONES DEL FORMULARIO
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita el envío del formulario por defecto
+
+  
+  const nombre = document.getElementById('Nombre').value;
+  const email = document.getElementById('Email').value;
+  const mensaje = document.getElementById('Mensaje').value;
+
+  
+  if (nombre === '' || email === '' || mensaje === '') {
+      alert('Por favor, completa todos los campos.');
+      return;
+  }
+
+
+  console.log('Nombre:', nombre);
+  console.log('Email:', email);
+  console.log('Mensaje:', mensaje);
+  alert('Formulario enviado con éxito (simulación).');
+});
