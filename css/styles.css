@@ -322,6 +322,7 @@ color: white;
   background-color: rgba(31, 26, 23, 255);
   font-size: 1.6rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -332,6 +333,8 @@ color: white;
   align-items: center;
   width: 60rem;
   color: white;
+  width: 72rem;
+  margin-left: 10rem;
 }
 
 .footer-content h1,
@@ -341,12 +344,19 @@ color: white;
 }
 
 .footer-content h1 span,
-.footer-content h2 span {
+.footer-content h2 span,
+.footer-content h3 span {
   margin-right: 0.5rem;
   /* Espacio entre el icono y el texto */
 }
 
-
+.imagenFooter {
+  display: flex;
+  justify-content: left;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2.5rem;
+}
 
 /* Carrito */
 form.Contact {
