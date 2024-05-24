@@ -185,22 +185,7 @@ html {
   left: 2rem;
 }
 
-/* Iconos de la barra de navegacion */
-.iconos2 {
-  background-color: white;
-  border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  margin: 1rem;
-  /* display: grid;
-  grid-template-columns: 2rem;
-  grid-template-rows: 20rem 20rem 20rem; */
-  position: relative;
-  top: 10rem;
-  left: 8rem;
-  display: flex;
-  flex-direction: row;
-}
+
 
 
 /* formulario */
@@ -213,7 +198,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 8rem;
 }
 
@@ -251,13 +236,22 @@ span.Formulario {
   display: block;
   margin: 0 auto;
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
-/* Fotos Nosotros */
+/* Historia Nosotros */
 .familiaLanzarini {
   width: 55rem;
   height: 40rem;
-
+  margin-top: 5rem;
+}
+/* p{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+} */
+.contenido p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .container2 {
@@ -269,7 +263,7 @@ span.Formulario {
   /* Centra verticalmente */
 }
 
-/* Contenedor de Nosotros */
+
 .contenido {
   width: 80rem;
   padding: 20px;
@@ -282,14 +276,18 @@ span.Formulario {
 }
 
 figcaption {
-  color: grey;
+  color: white;
   font-size: 1rem;
+  margin-bottom: 5rem;
 }
+
 
 /* Fondos de cada pagina */
 body.Nosotros {
   background-image: url('/images/patronDeCorcho.webp');
-}
+  /* background-color: #94644c; */
+  /* background-color: #bd8f70; */
+} 
 
 body.Contactos {
   background-image: url('/images/patronDeCorcho.webp');
@@ -298,33 +296,22 @@ body.Contactos {
 body.Vinos {
   background-image: url('/images/patronDeCorcho.webp');
 }
-
-/* Footer */
-
-/* .footer {
-  height: 10rem;
-  background-color:rgba(31, 26, 23, 255) ;
-  font-size: 1.6rem;
-  position: static;
+body.cart-body {
+  background-image: url('/images/patronDeCorcho.webp');
 }
 
 
-.footer h1,h2 {
-display: flex;
-
-flex-direction: row;
-color: white;
-} */
-
 /* Footer */
 .footer {
-  height: 15rem;
+
+  /* height: 15rem; */
   background-color: rgba(31, 26, 23, 255);
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
 }
 
 .footer-content {
@@ -334,7 +321,12 @@ color: white;
   width: 60rem;
   color: white;
   width: 72rem;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
+
+}
+
+figure {
+  float: left;
 }
 
 .footer-content h1,
@@ -355,8 +347,32 @@ color: white;
   justify-content: left;
   width: 8rem;
   height: 8rem;
-  margin-bottom: 2.5rem;
+  /* border: 1rem solid rgba(31, 26, 23, 255) ; */
 }
+
+.iconFooter {
+
+  display: flex;
+  justify-content: start;
+}
+
+/* Iconos de la barra de navegacion */
+.iconos2 {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.4rem;
+
+  /* position: relative;
+  top: 10rem;
+  left: 8rem;
+   */
+}
+
+
 
 /* Carrito */
 form.Contact {
@@ -418,7 +434,7 @@ form.Contact {
   height: 38rem;
   width: 25rem;
   background-color: white;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   margin-left: 4rem;
   margin-top: 4rem;
   display: flex;
@@ -498,6 +514,7 @@ body.checkout {
   grid-template-columns: auto 1fr;
   /* Columna para el nombre y precio, columna para la cantidad y descripción */
   gap: 10px;
+  margin-top: 2rem;
 }
 
 .cart-item h3 {
@@ -510,8 +527,9 @@ body.checkout {
 
 .cart-item p:last-of-type {
   font-style: italic;
-  color: #888;
+  color: black;
 }
+
 
 
 /* Descripcion de los vinos */
@@ -531,6 +549,14 @@ body.checkout {
   width: 40rem;
 }
 
+.container_description  {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
 
 .float-left {
   float: left;
@@ -543,14 +569,14 @@ body.checkout {
   float: left;
   height: 25rem;
   width: 40rem;
-  margin-top: 14rem;
+  margin-top: 20rem;
 }
 
 .float-left-3 {
   float: left;
   height: 25rem;
   width: 40rem;
-  margin-top: 15.5rem;
+  margin-top: 20.5rem;
 }
 
 
@@ -583,13 +609,22 @@ body.checkout {
 .content-grafico-caract {
   display: flex;
   flex-direction: column;
+  
 }
-
+/* .content-grafico-caract span{
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+} */
 .chart {
   width: 50rem;
   font-family: Arial, sans-serif;
   float: left;
-  margin-top: 4rem;
+  margin-top: 5.5rem;
 }
 
 
@@ -606,7 +641,7 @@ body.checkout {
 
 .bar-container {
   flex-grow: 1;
-  height: 20px;
+  height: 0.5rem;
   background-color: #f3f3f3;
   position: relative;
   margin-top: 1.5rem;
@@ -615,4 +650,30 @@ body.checkout {
 .bar {
   height: 100%;
   background-color: #b22222;
+}
+
+
+/* Arrelos para que el texto sea mas legible, texto de nosotros y cards del carrito */
+
+.contenido p {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.cart-item p {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.cart-item h3 {
+  color: #000;
+  font-weight: bold;
 }

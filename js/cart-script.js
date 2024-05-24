@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const cartItemsContainer = document.getElementById('cart-items');
-    const resetCartButton = document.getElementById('reset-cart'); // Selecciona el botón
+    const resetCartButton = document.getElementById('reset-cart'); 
 
     resetCartButton.addEventListener('click', function() {
-        localStorage.removeItem('cart'); // Elimina el carrito del almacenamiento local
-        cartItemsContainer.innerHTML = "No hay vinos en el carrito."; // Limpia el contenido del contenedor
+        localStorage.removeItem('cart'); 
+        cartItemsContainer.innerHTML = "No hay vinos en el carrito."; 
     });
 
     const cart = JSON.parse(localStorage.getItem('cart'));
@@ -64,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function getWineInfoById(id) {
-        // Función para obtener información del vino...
+        
     }
 
     function createCartItemElement(wineInfo, quantity) {
-        // Función para crear elementos de los ítems del carrito...
+        
     }
 });
 

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Asegurarse de que todos los elementos existen antes de agregarles eventos
   
-  // 1. Agregar al carrito
+  //  Agregar al carrito
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
   if (addToCartButtons) {
     addToCartButtons.forEach(button => {
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('cart', JSON.stringify(existingItems));
   }
   
-  // 2. Mostrar diapositivas de fondo
+  //  Mostrar diapositivas de fondo
   const slides = document.querySelectorAll('.background-slide');
   if (slides.length > 0) {
     let currentSlide = 0;
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // 3. Barra de navegación
+  //  Barra de navegación
   const barraNavegacion = document.getElementById('barraNavegacion');
   if (barraNavegacion) {
     barraNavegacion.addEventListener('mouseover', function() {
@@ -50,18 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 4. Validaciones del formulario
+  //  Validaciones del formulario
   const form = document.getElementById('contactForm');
   if (form) {
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita el envío del formulario por defecto
-
-        // Obtener los valores de los campos
+        event.preventDefault(); 
+        
         const nombre = document.getElementById('Nombre').value;
         const email = document.getElementById('Email').value;
         const mensaje = document.getElementById('Mensaje').value;
 
-        // Validar los campos
+        
         if (nombre === '') {
             alert('Por favor, ingresa tu nombre.');
             return;
@@ -77,14 +75,14 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Aquí puedes agregar más lógica para enviar el formulario a un servidor si es necesario.
+        
         alert('Su mensaje a sido enviado con éxito.');
 
         console.log('Nombre:', nombre);
         console.log('Email:', email);
         console.log('Mensaje:', mensaje);
 
-        // Puedes resetear el formulario si quieres
+        
         form.reset();
     });
   }
