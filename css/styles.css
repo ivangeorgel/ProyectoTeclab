@@ -677,3 +677,128 @@ body.checkout {
   color: #000;
   font-weight: bold;
 }
+
+
+
+
+/* MEDIAS QUERIS */
+
+/* Barra de navegacion */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lista {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .lista .item-lista {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .nav ul li a {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Fondo de pantalla de home */
+
+
+
+
+@media (max-width: 768px) {
+  .background-slide {
+    height: 50rem;
+  }
+  .content {
+    top: 30rem;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .Titulo {
+    font-size: 3.5rem;
+  }
+
+  .Subtitulo {
+    font-size: 1.5rem;
+    justify-content: end;
+    padding: 0 1rem;
+  }
+}
+
+/* Boton de la pantalla principal */
+
+/* @media (max-width: 768px) {
+  #nextBtn {
+    left: 0.6rem;
+    width: 9.5rem;
+    font-size: 0.7rem;
+  }
+
+} */
+
+@media (max-width: 768px) {
+  .butt {
+    top: 15rem;
+    padding: 1rem;
+  }
+
+  #nextBtn {
+    padding: 0.5rem 1rem;
+    letter-spacing: normal;
+    width: 9rem;
+    top: 5rem;
+    left: 4rem;
+  }
+
+  /* #nextBtn::before {
+    height: 150px;
+    bottom: -100%;
+  }
+
+  #nextBtn:hover::before {
+    bottom: 50px;
+  } */
+}
+
+
+/* Iconos de redes sociales home */
+@media (max-width: 768px) {
+  .iconos {
+    left: 1.3rem;
+    top: 14rem;
+  }
+
+}
+
+
+
+/* Media queris de NOSOTROS */
+
+@media (max-width: 768px) {
+  .container2 {
+   width: 20rem; 
+  }
+  .contenido p {
+    left: 10rem;
+  }
+
+}
