@@ -50,6 +50,7 @@ html {
   color: white;
   align-items: center;
   width: 7rem;
+  height: 8rem;
   justify-content: center;
 }
 
@@ -245,6 +246,7 @@ span.Formulario {
   height: 40rem;
   margin-top: 5rem;
 }
+
 /* p{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -287,7 +289,7 @@ body.Nosotros {
   background-image: url('/images/patronDeCorcho.webp');
   /* background-color: #94644c; */
   /* background-color: #bd8f70; */
-} 
+}
 
 body.Contactos {
   background-image: url('/images/patronDeCorcho.webp');
@@ -296,6 +298,7 @@ body.Contactos {
 body.Vinos {
   background-image: url('/images/patronDeCorcho.webp');
 }
+
 body.cart-body {
   background-image: url('/images/patronDeCorcho.webp');
 }
@@ -549,7 +552,7 @@ body.checkout {
   width: 40rem;
 }
 
-.container_description  {
+.container_description {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -609,8 +612,9 @@ body.checkout {
 .content-grafico-caract {
   display: flex;
   flex-direction: column;
-  
+
 }
+
 /* .content-grafico-caract span{
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
@@ -686,8 +690,8 @@ body.checkout {
 /* Barra de navegacion */
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
-    height: auto;
+    display: flex;
+        height: auto;
   }
 
   .lista {
@@ -705,9 +709,25 @@ body.checkout {
     width: 100%;
     justify-content: flex-start;
     padding-left: 1rem;
+    height: 2.5rem;
   }
 }
 
+@media (max-width: 768px) {
+  .contenedor-logo-nav {
+    width: 10rem;
+    height: 8rem;
+  }
+
+  .contenedor-item-lista {
+    width: 10rem;
+  }
+
+  .contenedor-imagen-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 
@@ -727,16 +747,16 @@ body.checkout {
     height: 50rem;
   } */
   .content {
-      top: 50rem;
-      left: 54%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      padding: 1rem;
-  
+    top: 45rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+
   }
 
   .Titulo {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   .Subtitulo {
@@ -859,46 +879,54 @@ body.checkout {
 
 /* Media queris Vino */
 
-@media only screen and (max-width:768px){
- .content-grafico-caract {
-  /* width: 40rem; */
-  padding-left: 5rem;
- } 
- .container_description {
-  width: 30rem;
- }
- .chart {
-  width: 30rem;
-  padding-left: 5rem;
- }
- .container-card {
-  width: 15rem;
- }
- .card {
-  width:15rem;
-  margin-left: 2rem;
-  margin-bottom: 30rem;
- }
- .float-left-2 {
-  margin-top: 33rem;
-  padding-left: 5rem;
-  margin-bottom: 10rem;
- }
- .float-left {
-  margin-bottom: 10rem;
-  padding-left: 5rem;
- }
- .float-left-3 {
-  margin-top: 32rem;
-  padding-left: 5rem;
-  margin-bottom: 10rem;
- }
-.add-to-cart {
-  margin-top: 3rem;
-  width: 4rem;
-  height: 4rem;
+@media only screen and (max-width:768px) {
+  .content-grafico-caract {
+    /* width: 40rem; */
+    padding-left: 5rem;
+  }
 
-}
+  .container_description {
+    width: 30rem;
+  }
+
+  .chart {
+    width: 30rem;
+    padding-left: 5rem;
+  }
+
+  .container-card {
+    width: 15rem;
+  }
+
+  .card {
+    width: 15rem;
+    margin-left: 2rem;
+    margin-bottom: 30rem;
+  }
+
+  .float-left-2 {
+    margin-top: 33rem;
+    padding-left: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .float-left {
+    margin-bottom: 10rem;
+    padding-left: 5rem;
+  }
+
+  .float-left-3 {
+    margin-top: 32rem;
+    padding-left: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .add-to-cart {
+    margin-top: 3rem;
+    width: 4rem;
+    height: 4rem;
+
+  }
 }
 
 
@@ -906,13 +934,14 @@ body.checkout {
 
 @media only screen and (max-width:768px) {
   .Form {
-    margin-bottom: 15rem;
-}
-.button-formulario {
-  padding: 0.5rem 1rem;
-  letter-spacing: normal;
-  width: 11rem;
-  /* top: 32rem; */
-  left: 2rem;
-}
+    margin-bottom: 19rem;
+  }
+
+  .button-formulario {
+    padding: 0.5rem 1rem;
+    letter-spacing: normal;
+    width: 11rem;
+    /* top: 32rem; */
+    left: 2rem;
+  }
 }
