@@ -682,10 +682,69 @@ body.checkout {
   font-weight: bold;
 }
 
+/* Menu hamburguesa */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(31, 26, 23, 255);
+  width: 100%;
+}
+
+.nav-links a {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links a:hover {
+  background-color: #ddd;
+}
 
 
 
 /* MEDIAS QUERIS */
+
+
+/* Menu hamburguesa */
+@media (max-width: 768px) {
+  .nav .lista {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    margin-left: 2rem;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}
+
+
+
+
 
 /* Barra de navegacion */
 @media (max-width: 768px) {
@@ -816,6 +875,9 @@ body.checkout {
 /* Media queris de NOSOTROS */
 
 
+
+
+
 /* Contenido del main */
 @media (max-width: 768px) {
   .container2 {
@@ -932,9 +994,11 @@ body.checkout {
 
 /* Media queris formulario contactos */
 
+
+
 @media only screen and (max-width:768px) {
   .Form {
-    margin-bottom: 19rem;
+    margin-bottom: 22rem;
   }
 
   .button-formulario {
