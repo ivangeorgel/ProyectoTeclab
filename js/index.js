@@ -92,6 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // Menu de hamburguesa
 
 function toggleMenu() {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+  const lista = document.getElementById('lista');
+  lista.style.display = lista.style.display === 'flex' ? '' : 'flex';
 }
