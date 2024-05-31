@@ -95,3 +95,20 @@ function toggleMenu() {
   const lista = document.getElementById('lista');
   lista.style.display = lista.style.display === 'flex' ? '' : 'flex';
 }
+
+
+
+//Efecto de ampliacion 
+
+function changeImage(imageSrc) {
+    const currentImage = document.getElementById('currentImage');
+    currentImage.src = imageSrc;
+}
+
+function scaleUp(element) {
+    element.classList.add('scale-up');
+}
+
+function scaleDown(element) {
+    element.classList.remove('scale-up');
+}

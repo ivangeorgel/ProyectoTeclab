@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="Home">
   <header>
     
     <nav class="nav">
@@ -32,6 +32,12 @@
   </header>
   <main>
     <div class="background-slider">
+      <div class="background-slide active" style="background-image: url('./images/recorte4.png');">
+        <div class="content">
+          <h1 class="Titulo">LANZARINI</h1>
+          <h2 class="Subtitulo">Bodegas y viñedos</h2>
+        </div>
+   <!-- <div class="background-slider">
       <div class="background-slide active" style="background-image: url('./images/recorte4.png');">
         <div class="content">
           <h1 class="Titulo">LANZARINI</h1>
@@ -64,7 +70,26 @@
     </div>
     <div class="butt">
       <button id="nextBtn">Siguiente</button>
-    </div>
+    </div> -->
+<!-- Galeria dr imagenes -->
+<div class="gallery-container">
+      <!-- <div class="main-image">
+          <img id="currentImage" src="/images/Logo.jpg" alt="Imagen principal">
+      </div> -->
+      <div class="thumbnails">
+          <img class="thumbnail" src="./images/viñedosOriginal2.jpg" alt="Miniatura 1" onclick="changeImage('./images/viñedosOriginal2.jpg')" onmouseover="scaleUp(this)" onmouseout="scaleDown(this)">
+          <img class="thumbnail" src="./images/bodega-lanzarini-interior.jpg" alt="Miniatura 2" onclick="changeImage('./images/bodega-lanzarini-interior.jpg')" onmouseover="scaleUp(this)" onmouseout="scaleDown(this)">
+          <img class="thumbnail" src="./images/bodega_aire.jpg" alt="Miniatura 3" onclick="changeImage('./images/bodega_aire.jpg')" onmouseover="scaleUp(this)" onmouseout="scaleDown(this)">
+          <img class="thumbnail" src="./images/bodega-lanzarini-uvas.jpg" alt="Miniatura 4" onclick="changeImage('./images/bodega-lanzarini-uvas.jpg')" onmouseover="scaleUp(this)" onmouseout="scaleDown(this)">
+          <img class="thumbnail" src="./images/bodega.jpg" alt="Miniatura 5" onclick="changeImage('./images/bodega.jpg')" onmouseover="scaleUp(this)" onmouseout="scaleDown(this)">
+          <img class="thumbnail" src="./images/paisaje2.jpeg" alt="Miniatura 6" onclick="changeImage('./images/paisaje2.jpeg')" onmouseover="scaleUp(this)" onmouseout="scaleDown(this)">
+      </div>
+
+    
+  </div>
+
+
+</div>
     <figure>
       <a href="https://www.facebook.com/bodegalanzarini?locale=es_LA"><img src="./icons/Facebook.png" alt="Facebook" class="iconos"></a>
       <a href="https://www.instagram.com/bodegalanzarini/"><img src="./icons/instagram.png" alt="Instagram" class="iconos"></a>
