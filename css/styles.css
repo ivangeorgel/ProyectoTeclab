@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+  font-family: Copperplate Gothic heavy;
 }
 
 html {
@@ -49,9 +50,10 @@ html {
   text-decoration: none;
   color: white;
   align-items: center;
-  width: 7rem;
+  width: 8rem;
   height: 8rem;
   justify-content: center;
+  font-size: 1.3rem;
 }
 
 #barraNavegacion:hover {
@@ -60,7 +62,7 @@ html {
 }
 
 /* Fondos de pantallas */
-.background-slide {
+/* .background-slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -71,34 +73,86 @@ html {
   opacity: 0;
   transition: opacity 1s ease;
   z-index: 0;
+  
 }
 
 .active {
   opacity: 1;
-}
+} */
 
+
+/* 
 .content {
   position: absolute;
   top: 22rem;
   left: 51.5rem;
   transform: translate(-50%, -50%);
   text-align: center;
-  /* color: white; */
-  /* Color del texto */
+  
+} */
+
+/* Tamaño del texto */
+/* .Titulo {
+  font-size: 6rem;
+  
+  color: white;
+}
+
+.Subtitulo-top {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  color: white;
+}
+.Subtitulo-bottom {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content:center;
+  color: white;
+} */
+
+
+.content {
+  position: absolute;
+  top: 22rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .Titulo {
   font-size: 6rem;
-  /* Tamaño del texto */
   color: white;
+  position: relative;
 }
 
-.Subtitulo {
+.Titulo::before,
+.Titulo::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* Cambia esto al color que prefieras */
+  left: 0;
+}
+
+.Titulo::before {
+  top: -10px; /* Ajusta esta distancia según lo necesites */
+}
+
+.Titulo::after {
+  bottom: -10px; /* Ajusta esta distancia según lo necesites */
+}
+
+.Subtitulo-top, .Subtitulo-bottom {
   display: flex;
   font-size: 1.5rem;
-  justify-content: flex-end;
+  justify-content: center;
   color: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+
 
 
 /*Boton de la pagina principal*/
@@ -173,17 +227,19 @@ html {
 
 /* Iconos */
 .iconos {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin: 2rem;
   display: grid;
   grid-template-columns: 2rem;
   grid-template-rows: 20rem 20rem 20rem;
   position: relative;
-  top: 10rem;
+  /* top: 10rem; */
+  bottom: 30rem;
   left: 2rem;
+  border-radius: 1.5rem;
 }
 
 
@@ -285,9 +341,10 @@ figcaption {
 
 
 /* Fondos de cada pagina */
-/* body.Home {
-  background-image: url('/images/patronDeCorcho.webp');
-} */
+body.Home {
+  background-image: url('/images/viñedosoriginal-transformed.jpeg');
+  
+}
 body.Nosotros {
   background-image: url('/images/patronDeCorcho.webp');
   /* background-color: #94644c; */
@@ -719,13 +776,13 @@ body.checkout {
 .thumbnails {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1.5rem;
   padding-top: 32rem;
 }
 
 .thumbnail {
-  width: 100px;
-  height: 100px;
+  width: 13rem;
+  height: 13rem;
   object-fit: cover;
   cursor: pointer;
   border: 2px solid transparent;
@@ -734,7 +791,7 @@ body.checkout {
 }
 
 .thumbnail:hover {
-  border: 2px solid #007BFF;
+  border: 2px solid rgb(148, 100, 76);
 }
 
 .thumbnail.scale-up {
@@ -869,7 +926,7 @@ body.checkout {
     display: flex;
     justify-content: center;
   }
-  /*Tengo que ponerle hover  */
+  
   
   .content {
     top: 45rem;
@@ -890,6 +947,69 @@ body.checkout {
     padding: 0 1rem;
   }
 }
+
+
+
+ @media (max-width:768px) {
+  body.Home {
+    background-image: url('/images/fondo-mobile.png');
+  }
+  /* .content {
+    top: 50rem;
+      left: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    background-color: #2C2A2A;
+    
+    width: 300px;
+    height: 300px;
+    border: 10px solid #D19F71;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+  }
+  
+  .content::before, .content::after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 2px;
+      background-color: #D19F71;
+      left: 10%;
+  }
+  
+  .content::before {
+      top: 20%;
+  }
+  .content::after {
+      top: 80%;
+  }
+  .content .Subtitulo-top, .content .Subtitulo-bottom {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+  }
+  .content .Subtitulo-top{
+      top: 5%;
+  }
+  .content .Subtitulo-bottom {
+      bottom: 5%;
+  }
+  .content .Titulo {
+      font-family: 'Oswald', sans-serif;
+      font-size: 48px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+   */
+} 
 
 /* Boton de la pantalla principal */
 
@@ -931,7 +1051,8 @@ body.checkout {
 @media (max-width: 768px) {
   .iconos {
     left: 1.3rem;
-    top: 32rem;
+    /* top: 32rem; */
+    bottom: 90rem;
   }
 
 }
@@ -1075,3 +1196,20 @@ body.checkout {
     left: 2rem;
   }
 }
+
+
+/* Fotos pantalla principal */
+
+@media only screen and (max-width:768px) {
+  .thumbnails {
+    margin-top: 8rem;
+    display: grid;
+    align-content: center;
+    grid-template-rows: 15rem 15rem 15rem;
+    grid-auto-flow: column;
+    grid-gap: 3rem;
+    height: 100vh;
+  }
+}
+
+
