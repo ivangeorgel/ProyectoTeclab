@@ -126,6 +126,8 @@ html {
   position: relative;
 }
 
+/* Lineas del titulo */
+
 .Titulo::before,
 .Titulo::after {
   content: '';
@@ -356,7 +358,11 @@ body.Contactos {
 }
 
 body.Vinos {
-  background-image: url('/images/patronDeCorcho.webp');
+  /* background-image: url('/images/patronDeCorcho.webp'); */
+  /* background-color: #fff; */
+  /* background-color: #EFEFEF; */
+  background-color: #626467;
+  
 }
 
 body.cart-body {
@@ -367,8 +373,9 @@ body.cart-body {
 /* Footer */
 .footer {
 
-  /* height: 15rem; */
-  background-color: rgba(31, 26, 23, 255);
+  height: 25rem;
+  /* background-color: rgba(31, 26, 23, 255); */
+  background-color: #272626;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -376,21 +383,28 @@ body.cart-body {
   align-items: center;
   padding: 1rem 0;
 }
-
+.Titulo-footer {
+  font-size: 3.5rem;
+  color: white;
+}
 .footer-content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 60rem;
+  /* width: 60rem; */
   color: white;
-  width: 72rem;
-  /* margin-left: 10rem; */
+  width: 100%;
+ 
 
 }
 
-figure {
-  float: left;
+.footer-info {
+  display: flex;
+  flex-direction: row;
 }
+/* figure {
+  margin-right: 20rem;
+} */
 
 .footer-content h1,
 .footer-content h2 {
@@ -415,24 +429,23 @@ figure {
 
 .iconFooter {
 
-  display: flex;
-  justify-content: start;
+
 }
 
 /* Iconos de la barra de navegacion */
 .iconos2 {
   display: flex;
   flex-direction: row;
-  background-color: white;
-  border-radius: 0.5rem;
-  width: 2rem;
-  height: 2rem;
+  border-radius: 3rem;
+  width: 3rem;
+  height: 3rem;
   margin: 0.4rem;
 
   /* position: relative;
   top: 10rem;
   left: 8rem;
    */
+   
 }
 
 
@@ -491,7 +504,7 @@ form.Contact {
 }
 
 .card {
-  /* box-shadow: 0.5rem 2rem 2rem grey; */
+  
   border: 1px solid rgba(211, 211, 211, 0.384);
   border-radius: 0.8rem;
   height: 38rem;
@@ -503,6 +516,23 @@ form.Contact {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+
+  position: relative;
+  
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+
+
+  
 }
 
 .card:hover {
@@ -591,6 +621,56 @@ body.checkout {
 .cart-item p:last-of-type {
   font-style: italic;
   color: black;
+}
+
+
+
+/* .card {
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+} */
+
+
+
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00AC7C;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 80ms, bottom 80ms;
+  cursor: pointer;
+}
+
+.card:hover .add-to-cart {
+  bottom: 0.5em;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active .add-to-cart {
+  content: "Added !";
+  background: #008C5C;
 }
 
 
@@ -791,7 +871,7 @@ body.checkout {
 }
 
 .thumbnail:hover {
-  border: 2px solid rgb(148, 100, 76);
+  border: 2px solid rgba(31, 26, 23, 255);
 }
 
 .thumbnail.scale-up {
