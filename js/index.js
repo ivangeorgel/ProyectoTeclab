@@ -1,3 +1,7 @@
+
+
+// FUNCION DEL CARRITO
+
 document.addEventListener('DOMContentLoaded', function() {
   
   //  Agregar al carrito

@@ -33,7 +33,7 @@
         </nav>
     </header>
     <main>
-        <div class="Form">
+        <!-- <div class="Form">
             <form class="Contac" id="contactForm">
                 <label for="nombre">
                     <span class="Formulario">CONTACTANOS</span>
@@ -43,34 +43,85 @@
                 </label>
                 <button  class="button-formulario" type="submit">Enviar</button>
             </form>
+        </div> -->
+
+        <div class="Form">
+            <form class="Contac" id="contactForm">
+                <label for="nombre">
+                    <span class="Formulario">CONTACTANOS</span>
+                    <input class="input" type="text" id="Nombre" placeholder="Nombre" required />
+                    <input class="input" type="email" id="Email" placeholder="Email" required />
+                    <input class="input" type="text" id="Mensaje" placeholder="Mensaje" required />
+                </label>
+                <button class="button-formulario" type="submit">Enviar</button>
+            </form>
         </div>
+    </main>
+    
+
+    
         
     </main>
     <footer class="footer">
        
 
-
+        <div class="Subtitulo-top-footer">Bodegas y</div>
+        <div class="Titulo-footer">LANZARINI</div>
+        <div class="Subtitulo-bottom-footer">viñedos</div>
         
-        <!-- <div class="contenedorImgFooter">
-            <img src="./images/Logo.jpg" alt="" class="imagenFooter">
-        </div> -->
         <div class="footer-content">
- <div class="iconFooter">
-            <figure>
-            <a href="https://www.facebook.com/bodegalanzarini?locale=es_LA"><img src="./icons/Facebook.png"
-                    alt="Facebook" class="iconos2"></a>
-            <a href="https://www.instagram.com/bodegalanzarini/"><img src="./icons/instagram.png" alt="Instagram"
-                    class="iconos2"></a>
-            <a href="https://x.com/BodegaLanzarini?t=5YaHzGkBzKN4i7UpdHktNw&s=08 "><img src="./icons/x.png" alt="x"
-                    class="iconos2"> </a>
-        </figure>
-        </div>
+            
+            <div class="iconFooter">
+                <figure>
+                    <a href="https://www.facebook.com/bodegalanzarini?locale=es_LA"><img
+                            src="./icons/facebook-blanco.png" alt="Facebook" class="iconos2"></a>
+                    <a href="https://www.instagram.com/bodegalanzarini/"><img src="./icons/instagram blanco.png"
+                            alt="Instagram" class="iconos2"></a>
+                    <a href="https://x.com/BodegaLanzarini?t=5YaHzGkBzKN4i7UpdHktNw&s=08 "><img
+                            src="./icons/x-blanco2.jpg" alt="x" class="iconos2"> </a>
+                </figure>
+            </div>
+
 
             <h1><span class="material-symbols-outlined">call</span>0263 444-2291</h1>
             <h2><span class="material-symbols-outlined">mail</span>arlanzarini@lanzarini.com</h2>
             <h3><span class="material-symbols-outlined">location_on</span>San Isidro 231, Rivadavia, Argentina</h3>
         </div>
     </footer>
+
+<script>
+        document.getElementById('contactForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById('Nombre').value;
+            const email = document.getElementById('Email').value;
+            const mensaje = document.getElementById('Mensaje').value;
+
+            const data = { nombre, email, mensaje };
+
+            try {
+                const response = await fetch('http://localhost:3000/contacto', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    alert('Contacto enviado exitosamente');
+                } else {
+                    alert('Error al enviar contacto');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error al enviar contacto');
+            }
+        });
+    </script>
 </body>
 
 </html>
+
+
+
