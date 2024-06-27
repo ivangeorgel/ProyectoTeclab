@@ -58,7 +58,7 @@ html {
 
 #barraNavegacion:hover {
   background-color: rgb(148, 100, 76);
-  height: 7rem;
+  height: 8rem;
 }
 
 /* Fondos de pantallas */
@@ -407,7 +407,7 @@ body.cart-body {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   /* padding: 1rem 0; */
 }
@@ -1237,7 +1237,9 @@ form.Contact {
 /* FOOTER nosotros */
 
 @media only screen and (max-width: 768px) {
-
+.footer {
+  height: 30rem;
+}
   .footer-content {
     width: auto;
   }
@@ -1316,7 +1318,10 @@ form.Contact {
     margin-top: 3rem;
     width: 4rem;
     height: 4rem;
-
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    
   }
 }
 
