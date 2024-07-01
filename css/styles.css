@@ -325,6 +325,44 @@ span.Formulario {
  }
 
 /* Historia Nosotros */
+
+.content-nosotros {
+  position: relative;
+  top: 7rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+.Titulo-nosotros::before,
+.Titulo-nosotros::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black; /* Cambia esto al color que prefieras */
+  left: 0;
+}
+
+.Titulo-nosotros::before {
+  top: -10px; /* Ajusta esta distancia según lo necesites */
+}
+
+.Titulo-nosotros::after {
+  bottom: -10px; /* Ajusta esta distancia según lo necesites */
+}
+
+.Subtitulo-top-nosotros, .Subtitulo-bottom-nosotros {
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  color: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+
 .familiaLanzarini {
   width: 55rem;
   height: 40rem;
@@ -362,9 +400,11 @@ span.Formulario {
 }
 
 figcaption {
-  color: white;
+  /* color: white; */
   font-size: 1rem;
   margin-bottom: 5rem;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
 }
 
 
@@ -375,8 +415,9 @@ body.Home {
 }
 body.Nosotros {
   /* background-image: url('/images/patronDeCorcho.webp'); */
-  background-color: #626467;
+  /* background-color: #626467; */
   /* background-color: #bd8f70; */
+  background-image: url('/images/fondo-papel2.avif');
 }
 
 body.Contactos {
@@ -393,8 +434,8 @@ body.Vinos {
 }
 
 body.cart-body {
-  /* background-image: url('/images/patronDeCorcho.webp'); */
-  background-color: #626467;
+  background-image: url('/images/patronDeCorcho.webp');
+  /* background-color: #626467; */
 }
 
 
@@ -862,15 +903,25 @@ form.Contact {
 /* Arrelos para que el texto sea mas legible, texto de nosotros y cards del carrito */
 
 .contenido p {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   color: #000;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); */
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 5px;
+  /* Tipo de letra */
+  font-family: 'Libre Baskerville', serif;
+  /* font-weight: 700; */
 }
-
+.contenido h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+.contenido b {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
 .cart-item p {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
