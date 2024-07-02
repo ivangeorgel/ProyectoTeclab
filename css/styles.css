@@ -333,6 +333,7 @@ span.Formulario {
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
+  margin-top: 7rem;
 }
 .Titulo-nosotros::before,
 .Titulo-nosotros::after {
@@ -340,23 +341,27 @@ span.Formulario {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: black; /* Cambia esto al color que prefieras */
+  background-color: black; 
   left: 0;
 }
 
 .Titulo-nosotros::before {
-  top: -10px; /* Ajusta esta distancia según lo necesites */
+  top: 42px; /* Ajusta esta distancia según lo necesites */
 }
 
 .Titulo-nosotros::after {
-  bottom: -10px; /* Ajusta esta distancia según lo necesites */
+  bottom: 42px; /* Ajusta esta distancia según lo necesites */
 }
 
+.Titulo-nosotros {
+  font-size: 7rem;
+  color: black;
+}
 .Subtitulo-top-nosotros, .Subtitulo-bottom-nosotros {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 2rem;
   justify-content: center;
-  color: white;
+  color: black;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -426,10 +431,10 @@ body.Contactos {
 }
 
 body.Vinos {
-  /* background-image: url('/images/patronDeCorcho.webp'); */
+  background-image: url('/images/patronDeCorcho.webp');
   /* background-color: #fff; */
   /* background-color: #EFEFEF; */
-  background-color: #626467;
+  /* background-color: #626467; */
   
 }
 
@@ -442,7 +447,7 @@ body.cart-body {
 /* Footer */
 .footer {
 
-  height: 25rem;
+  height: 30rem;
   /* background-color: rgba(31, 26, 23, 255); */
   background-color: #272626;
   font-size: 1.6rem;
@@ -451,6 +456,9 @@ body.cart-body {
   /* justify-content: center; */
   align-items: center;
   /* padding: 1rem 0; */
+}
+.footer-titulo-lanzarini {
+  margin-top: 3rem;
 }
 .Titulo-footer {
   font-size: 3.5rem;
@@ -520,13 +528,7 @@ figure {
   /* Espacio entre el icono y el texto */
 }
 
-.imagenFooter {
-  display: flex;
-  justify-content: left;
-  width: 8rem;
-  height: 8rem;
-  /* border: 1rem solid rgba(31, 26, 23, 255) ; */
-}
+
 
 
 
@@ -917,10 +919,12 @@ form.Contact {
 .contenido h1 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
+  text-decoration: underline;
 }
 .contenido b {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
+  text-decoration: underline;
 }
 .cart-item p {
   background-color: rgba(255, 255, 255, 0.8);
