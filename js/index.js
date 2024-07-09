@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         
-        alert('Su mensaje a sido enviado con éxito.');
+        // alert('Su mensaje a sido enviado con éxito.');
 
         console.log('Nombre:', nombre);
         console.log('Email:', email);
